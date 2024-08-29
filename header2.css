@@ -1,71 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+* {
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #333;
-    text-decoration: none;
-    color: #1d1d1d;
-    font-weight: 600;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
+.header-main {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #ffffff;
     border-bottom: 1px solid #ffffff;
+    width: 100%; /* Garantir que o cabeçalho ocupe a largura total */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo da largura */
+    position: relative; /* Permite ajustes no posicionamento absoluto dos elementos internos */
 }
 
-.logo a {
+.header-main .logo a {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #e7ab12;
+    font-family: "Poppins", sans-serif; /* Fonte aplicada ao logo */
 }
 
-.nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-bar a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-
-.search-cart-menu {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.search-form {
+.header-main .search-form {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.search-form input {
-    padding: 10px 40px 10px 15px;
+.header-main .search-form input {
+    padding: 10px 150px 10px 15px;
     font-size: 16px;
     border: 2px solid #ddd;
     border-radius: 10px;
     outline: none;
     transition: border-color 0.3s ease;
-    width: 200px;
+    width: 300px;
+    font-family: "Open Sans", sans-serif; /* Fonte aplicada ao campo de pesquisa */
 }
 
-.search-form input:focus {
+.header-main .search-form input:focus {
     border-color: #000000;
 }
 
-.search-form button {
+.header-main .search-form button {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -78,29 +60,83 @@ header {
     font-size: 16px;
 }
 
-.search-form button:focus {
+.header-main .search-form button:focus {
     outline: none;
 }
 
-.cart-icon {
+.header-main .search-cart-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-main .cart-icon {
     font-size: 24px;
-    color: #333;
+    color: #e7ab12;
     text-decoration: none;
 }
 
-.cart-icon:hover {
-    color: #555;
+.header-main .cart-icon:hover {
+    color: #e7ab12;
 }
 
-.menu-button {
+.header-main .menu-button {
     background: none;
     border: none;
     cursor: pointer;
     font-size: 24px;
-    color: #333;
+    color: #e7ab12;
     transition: color 0.3s ease;
 }
 
-.menu-button:hover {
-    color: #555;
+.header-main .menu-button:hover {
+    color: #e7ab12;
+}
+
+.header-main .user-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #e7ab12;
+    transition: color 0.3s ease;
+}
+
+/* Estilo para o novo cabeçalho */
+.header-secondary {
+    background-color: #e7ab12;
+    border-bottom: 1px solid #ddd;
+    width: 100%; /* Garantir que o cabeçalho ocupe a largura total */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo da largura */
+}
+
+.header-secondary .nav-bar-secondary {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%; /* Garantir que a barra de navegação ocupe a largura total */
+    box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo da largura */
+}
+
+.header-secondary .nav-bar-secondary ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-secondary .nav-bar-secondary li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700; /* Aumenta a espessura da fonte */
+}
+
+.header-secondary .nav-bar-secondary a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.header-secondary .nav-bar-secondary a:hover {
+    color: #ffffff;
 }
