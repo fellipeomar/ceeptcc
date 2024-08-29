@@ -6,24 +6,22 @@
     <title>Seu Site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="header2.css">
+    <link rel="stylesheet" href="slide2.css">
 </head>
 <body>
-    <header>
+    <!-- Cabeçalho Atual -->
+    <header class="header-main">
         <div class="logo">
             <a href="index.html">SuaLogo</a>
         </div>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="livros.html">Livros</a></li>
-                <li><a href="sobre-nos.html">Sobre Nós</a></li>
-            </ul>
-        </nav>
+        <form class="search-form" action="search.html" method="get">
+            <input type="text" placeholder="Buscar..." name="q">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
         <div class="search-cart-menu">
-            <form class="search-form" action="search.html" method="get">
-                <input type="text" placeholder="Buscar..." name="q">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+            <a href="login.html" class="user-button">
+                <i class="fa-solid fa-user"></i>
+            </a>
             <a href="carrinho.html" class="cart-icon">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
@@ -32,5 +30,46 @@
             </button>
         </div>
     </header>
+
+    <!-- Novo Cabeçalho -->
+    <header class="header-secondary">
+        <nav class="nav-bar-secondary">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Livros</a></li>
+                <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">       
+            <input type="radio" name="btn-radio" id="radio2">       
+            <input type="radio" name="btn-radio" id="radio3">
+            
+            <div class="slide-box primeiro">
+                <img class="img-desktop" src="pagina.png" alt="slide 1">
+            </div>
+
+            <div class="slide-box segundo">
+                <img class="img-desktop" src="pagina2.png" alt="slide 1">
+            </div>
+
+            <div class="slide-box terceiro">
+                <img class="img-desktop" src="pagina3.png" alt="slide 1">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+
+            </div>
 </body>
 </html>
