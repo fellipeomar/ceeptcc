@@ -140,3 +140,14 @@
 .header-secondary .nav-bar-secondary a:hover {
     color: #ffffff;
 }
+.livro-destaque {
+    font-size: 2em; /* Tamanho da fonte */
+    color: #e7ab12; /* Cor do texto */
+    text-align: center; /* Centralizar o texto */
+    margin: 20px 0; /* Margens superior e inferior */
+    font-family: "Poppins", sans-serif; /* Fonte do texto */
+    font-weight: bold; /* Peso da fonte */
+}
+.sobre-nos{
+    color: #e7ab12;
+}
