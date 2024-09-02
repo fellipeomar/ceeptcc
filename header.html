@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="header2.css">
     <link rel="stylesheet" href="slide2.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="sobre-nos.css"> 
 </head>
 <body>
-    <!-- Cabeçalho Atual -->
     <header class="header-main">
         <div class="logo">
             <a href="index.html">SuaLogo</a>
@@ -19,6 +20,9 @@
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
         <div class="search-cart-menu">
+            <a href="fav.html" class="user-button">
+                <i class="fa-solid fa-heart"></i>
+            </a>
             <a href="login.html" class="user-button">
                 <i class="fa-solid fa-user"></i>
             </a>
@@ -30,17 +34,17 @@
             </button>
         </div>
     </header>
-
-    <!-- Novo Cabeçalho -->
+    
     <header class="header-secondary">
         <nav class="nav-bar-secondary">
             <ul>
-                <li><a href="index.html">Início</a></li>
+                <li><a href="header.html">Início</a></li>
                 <li><a href="livros.html">Livros</a></li>
                 <li><a href="sobre-nos.html">Sobre Nós</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="slider">
         <div class="slider-content">
             <input type="radio" name="btn-radio" id="radio1">       
@@ -69,7 +73,75 @@
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
-
             </div>
+        </div>
+    </section>
+
+    <div class="carrosel">
+        <div class="containercarrosel">
+            <img src="imagem" alt="">
+            <img src="imagem" alt="">
+            <img src="imagem" alt="">
+            <img src="imagem" alt="">
+        </div>
+    </div>
+
+    <h1 class="livro-destaque">LIVROS EM DESTAQUE:</h1>
+    <div class="container">
+        <div class="card">
+            <img src="crepusculo.png" alt="Capa do Livro">
+            <div class="card-content">
+                <h2 class="card-title">Crepusculo</h2>
+                <p class="card-author">Autor do Livro</p>
+                <p class="card-description">Descrição breve do livro.</p>
+                <p class="card-price">R$29,90</p>
+                <a href="#" class="card-button">Comprar Agora</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="luanova.png" alt="Capa do Livro">
+            <div class="card-content">
+                <h2 class="card-title">Lua Nova</h2>
+                <p class="card-author">Autor do Livro</p>
+                <p class="card-description">Descrição breve do livro.</p>
+                <p class="card-price">R$29,90</p>
+                <a href="#" class="card-button">Comprar Agora</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="eclipse.png" alt="Capa do Livro">
+            <div class="card-content">
+                <h2 class="card-title">Eclipse</h2>
+                <p class="card-author">Autor do Livro</p>
+                <p class="card-description">Descrição breve do livro.</p>
+                <p class="card-price">R$29,90</p>
+                <a href="#" class="card-button">Comprar Agora</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="amanhecer.png" alt="Capa do Livro">
+            <div class="card-content">
+                <h2 class="card-title">Amanhecer</h2>
+                <p class="card-author">Autor do Livro</p>
+                <p class="card-description">Descrição breve do livro.</p>
+                <p class="card-price">R$29,90</p>
+                <a href="#" class="card-button">Comprar Agora</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="sobre-nos">
+        <h2 class="sobre-nos">SOBRE NÓS</h2>
+        <p>
+            Somos uma livraria apaixonada por livros e pela arte de contar histórias. 
+            Nossa missão é proporcionar aos nossos clientes uma seleção diversificada de livros 
+            que inspirem, eduquem e entretenham. Desde bestsellers até obras clássicas, 
+            nosso acervo é cuidadosamente curado para oferecer o melhor da literatura.
+        </p>
+        <p>
+            Explore nosso site para encontrar suas próximas leituras e não hesite em 
+            <a href="contato.html">entrar em contato</a> conosco para mais informações.
+        </p>
+    </section>
 </body>
 </html>
